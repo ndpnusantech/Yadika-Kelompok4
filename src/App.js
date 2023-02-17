@@ -1,8 +1,8 @@
-import {Navbar} from 'react-bootstrap'
+
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <h1 className="text-danger">Hallo everyone</h1>
     </div>
   );
 }
