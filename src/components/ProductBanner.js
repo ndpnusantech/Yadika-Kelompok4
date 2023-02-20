@@ -13,7 +13,7 @@ function SlideBanner() {
           alt="Second slide"
         />
         <Carousel.Caption>
-          <h1>Be the reel you</h1>
+          <h1>Be the reel you in teh world</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </Carousel.Caption>
       </Carousel.Item>
