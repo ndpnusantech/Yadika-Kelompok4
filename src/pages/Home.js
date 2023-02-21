@@ -1,5 +1,6 @@
-import Navbar from '../components/Navbar'
 import ProductBanner from '../components/ProductBanner'
+import ProductCard from '../components/ProductCard'
+import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import '../css/Index.css'
 
@@ -8,6 +9,11 @@ function Home() {
     <div>
      <Navbar />
      <ProductBanner />
+     <ProductCard />
+     <ProductBanner />
+     <ProductCard />
+     <ProductBanner />
+     <ProductCard />
      <Footer />
     </div>
   );
