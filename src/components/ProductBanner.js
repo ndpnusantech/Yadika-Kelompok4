@@ -1,5 +1,4 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import Banner from '../data/Banner'
 import banner from '../image/banner.jpg'
 import banner2 from '../image/banner2.jpg'
 import banner3 from '../image/banner3.jpg'
