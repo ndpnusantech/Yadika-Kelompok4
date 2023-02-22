@@ -1,50 +1,43 @@
-import Carousel from 'react-bootstrap/Carousel';
-import Banner from '../image/banner.jpg'
-import Banner2 from '../image/banner2.jpg'
-import Banner3 from '../image/banner3.jpg'
+import { Swiper, SwiperSlide } from "swiper/react";
+import banner from '../image/banner.jpg'
+import banner2 from '../image/banner2.jpg'
+import banner3 from '../image/banner3.jpg'
+// Import Swiper styles
+// import "swiper/css";
+// import "swiper/css/effect-fade";
+// import "swiper/css/navigation";
+// import "swiper/css/pagination";
 
-function SlideBanner() {
+
+// import required modules
+import { EffectFade, Navigation, Pagination } from "swiper";
+
+
+const ProductBanner = () => {
   return (
-    <Carousel>
-      <Carousel.Item interval={5000}>
-        <img
-          className="d-block w-100"
-          src={Banner2}
-          alt="Second slide"
-        />
-        <Carousel.Caption>
-          <h1>Be the reel you in teh world</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item interval={5000}>
-        <img
-          className="d-block w-100"
-          src={Banner3}
-          alt="Third slide"
-        />
-        <Carousel.Caption>
-          <h1>Be the reel you</h1>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item interval={5000}>
-        <img
-          className="d-block w-100"
-          src={Banner}
-          alt="Third slide"
-        />
-        <Carousel.Caption>
-          <h1>Be the reel you</h1>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
+    <Swiper
+    spaceBetween={30}
+    effect={"fade"}
+    navigation={true}
+    pagination={{
+      clickable: true,
+    }}
+    modules={[EffectFade, Navigation, Pagination]}
+    className="mySwiper"
+    style={{width: '100%', height: 'auto'}}
+  >
+    <SwiperSlide>
+      <img src={banner} style={{width: '100%'}} alt="foto" />
+    </SwiperSlide>
+    <SwiperSlide>
+      <img src={banner2} style={{width: '100%'}}  alt="foto" />
+    </SwiperSlide>
+    <SwiperSlide>
+      <img src={banner3} style={{width: '100%'}}  alt="foto" />
+    </SwiperSlide>
+  </Swiper>
   );
 }
 
-export default SlideBanner;
+export default ProductBanner
+

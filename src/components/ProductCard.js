@@ -1,11 +1,11 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/swiper-bundle.css';
 import { Card, Button } from 'react-bootstrap';
 import { DataProduct } from '../data/Data';
+import 'swiper/swiper-bundle.css';
 
 const ProductCard = ({ product }) => {
-  
+
   return (
     <Card style={{ width: '16rem', margin: 'auto'}}>
       <Card.Img variant="top" src={product.image} />
@@ -17,7 +17,7 @@ const ProductCard = ({ product }) => {
         <Card.Text>
           Price: {product.Price}
         </Card.Text>
-        <Button variant="primary" style={{width: '100%'}}>Add to Cart</Button>
+        <Button style={{width: '100%', backgroundColor: '#252525', borderColor: '#252525'}}>Add to Cart</Button>
       </Card.Body>
     </Card>
   )

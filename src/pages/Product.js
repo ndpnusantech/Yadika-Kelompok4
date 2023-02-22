@@ -8,6 +8,11 @@ const Product = () => {
     <div>
       <Navbar />
       <ProductBanner />
+
+        <div className='p-4 border-bottom border-dark border-3'>
+          <h3 style={{margin: '0'}}>PRODUCT</h3>
+        </div>
+      
       <ProductCard />
       <ProductCard />
       <ProductCard />

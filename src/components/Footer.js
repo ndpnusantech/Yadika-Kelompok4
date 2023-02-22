@@ -24,10 +24,10 @@ const Footer = () => {
         <Row className="justify-content-center m-1 p-2">
           <Col md="10">
             <div className="iconLink">
-              <a href="/#"><i className="fa-brands fa-instagram me-2 fa-2xl"></i></a>
-              <a href="/#"><i className="fa-brands fa-facebook me-2 fa-2xl"></i></a>
-              <a href="/#"><i className="fa-brands fa-twitter me-2 fa-2xl"></i></a>
-              <a href="/#"><i className="fa-brands fa-whatsapp me-2 fa-2xl"></i></a>
+              <a href="https://www.instagram.com/accounts/login/"><i className="fa-brands fa-instagram me-2 fa-2xl"></i></a>
+              <a href="https://id-id.facebook.com/login/device-based/regular/login/?login_attempt=1"><i className="fa-brands fa-facebook me-2 fa-2xl"></i></a>
+              <a href="https://twitter.com/i/flow/login"><i className="fa-brands fa-twitter me-2 fa-2xl"></i></a>
+              <a href="https://web.whatsapp.com/"><i className="fa-brands fa-whatsapp me-2 fa-2xl"></i></a>
             </div>
           </Col>  
         </Row>
