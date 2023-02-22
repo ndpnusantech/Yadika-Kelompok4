@@ -1,5 +1,5 @@
 import { Form, Button } from "react-bootstrap";
-import image from "../image/uwuw.jfif"
+import image from "../image/banner3.jpg"
 import "../css/login.css";
 
 const Login = () => {
@@ -18,7 +18,7 @@ const Login = () => {
         <Form.Group className="mb-2" controlId="formBasicCheckbox"></Form.Group>
         <div className="regis d-flex">
         <p>Belum Pernah login ? </p> 
-        <a href="">Register</a>
+        <a href="/#">Register</a>
         </div>
         <Button variant="primary" type="submit">
           Submit
