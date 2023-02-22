@@ -7,7 +7,7 @@ import { DataProduct } from '../data/Data';
 const ProductCard = ({ product }) => {
   
   return (
-    <Card style={{ width: '16rem', margin: 'auto'}}>
+    <Card  style={{ width: '16rem', margin: 'auto'}}>
       <Card.Img variant="top" src={product.image} />
       <Card.Body>
         <Card.Title>{product.ProductName}</Card.Title>
