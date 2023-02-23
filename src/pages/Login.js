@@ -1,8 +1,9 @@
 import { Form, Button } from "react-bootstrap";
-import image from "../image/banner3.jpg"
+import image from "../image/blck.jfif"
 import "../css/login.css";
 
 const Login = () => {
+
   return (
     <div className="from">
       <Form className="fromLogin">
@@ -15,16 +16,15 @@ const Login = () => {
           <Form.Label>Password</Form.Label>
           <Form.Control type="password" placeholder="Password" />
         </Form.Group>
-        <Form.Group className="mb-2" controlId="formBasicCheckbox"></Form.Group>
-        <div className="regis d-flex">
+        <div className="regis d-flex ">
         <p>Belum Pernah login ? </p> 
-        <a href="/#">Register</a>
+        <a href="/register" className="">Register</a>
         </div>
-        <Button variant="primary" type="submit">
+        <Button id="klik" variant="primary" type="submit">
           Submit
         </Button>
       </Form>
-      <img src={image} alt="" className="gambar w-25 "/>
+      <img src={image} alt="" className="gambar"/>
     </div>
   );
 
