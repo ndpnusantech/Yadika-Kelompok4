@@ -1,0 +1,36 @@
+.count {
+    border: 1px solid #dedede;
+    width: 130px;
+    height: 40px;
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.counter {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 5px;
+    width: 30px;
+    text-align: center;
+  }
+  
+  .increment,
+  .decrement {
+    background-color: white;
+    font-size: 18px;
+    padding: 0 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .increment:hover,
+  .decrement:hover {
+    background-color: #dedede;
+  }
+  
+  .productImage {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #dedede;
+  }
