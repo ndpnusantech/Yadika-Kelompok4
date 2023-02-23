@@ -29,7 +29,7 @@ function Navigation() {
             <Nav.Link href="#home" className="mx-3">
               <i className="fa-regular fa-user"></i>
             </Nav.Link>
-            <Nav.Link href="#link" className="">
+            <Nav.Link href="/cart" className="">
               <i class="fa-solid fa-cart-shopping"></i>
             </Nav.Link>
           </Nav>

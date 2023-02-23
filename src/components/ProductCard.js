@@ -8,7 +8,7 @@ import "swiper/swiper-bundle.css";
 const ProductCard = ({ product }) => {
   return (
     <Link to="/productDetail" style={{textDecoration: 'none', color: '#515151'}}>
-      <Card style={{ width: "16rem", margin: "auto" }}>
+      <Card style={{ width: "18rem", margin: "auto" }}>
         <Card.Img variant="top" src={product.image} />
         <Card.Body>
           <Card.Title>{product.ProductName}</Card.Title>

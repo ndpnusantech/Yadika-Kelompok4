@@ -4,6 +4,7 @@ import Product from "./pages/Product";
 import Login from "./pages/Login"
 import ProductDetail from "./pages/ProductDetail";
 import Register from "./pages/Register"
+import Cart from "./pages/Cart"
 import './css/Index.css'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="/login" element={< Login/>} />
         <Route path="/register" element={< Register/>} />
         <Route path="/productDetail" element={< ProductDetail/>} />
+        <Route path="/cart" element={< Cart/>} />
       </Routes>
     </BrowserRouter>
   );
