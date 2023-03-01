@@ -1,6 +1,6 @@
 import React from "react";
 import Table from "react-bootstrap/Table";
-import { Row, Col, Container, Button } from "react-bootstrap";
+import { Container, Button } from "react-bootstrap";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
@@ -45,6 +45,10 @@ const Cart = () => {
             </tbody>
           </Table>
           
+          <div className="d-flex justify-content-end">
+            <Button variant="secondary" className="me-2">SHOP</Button>
+            <Button variant="secondary">CHECKOUT</Button>
+          </div>
           <div className="d-flex justify-content-end">
             <Button variant="secondary" className="me-2">SHOP</Button>
             <Button variant="secondary">CHECKOUT</Button>
