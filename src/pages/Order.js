@@ -1,79 +1,98 @@
-import { Button, Card, Col, Container, Row } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
+import Button from "react-bootstrap/Button";
+import Table from "react-bootstrap/Table";
 import Form from "react-bootstrap/Form";
-import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 
-import "../css/order.css";
-
-function BasicExample() {
+function Order() {
   return (
     <div>
       <Navbar />
-      <Container className="form">
-        <Row>
-          <Col>
-            <Form className="order">
-              <h1 className="fs-3">BILLING DETAIL</h1>
-              <hr />
-              <Form.Label>Recipient's name</Form.Label>
-              <Form.Control type="text" placeholder="Nama Penerima" />
-              <div className="wp">
-                <Form.Label>Province</Form.Label>
-                <Form.Control type="text" placeholder="Provinsi" />
-              </div>
-              <div className="bungkus">
-                <Form.Label>Address</Form.Label>
-                <Form.Control type="text" placeholder="Provinsi" />
-              </div>
-              <div className="pw">
-                <Form.Label>City</Form.Label>
-                <Form.Control type="text" placeholder="Kota" />
-              </div>
-              <Form.Label>Post Code</Form.Label>
-              <Form.Control type="text" placeholder="Kode Post" />
-              <Form.Label>Phone</Form.Label>
-              <Form.Control type="number" placeholder="No telfon (Aktif)" />
-              <Form.Label>Email</Form.Label>
-              <Form.Control type="email" placeholder="Email" />
-            </Form>
-          </Col>
-          <Col className="mt-5  coy">
-            <h5>YOUR ORDER</h5>
-            <p>PRODUCT</p>
-            <hr className="w-50" />
-            <div className="d-flex one">
-              <p>Dark T-Shirt Series S - L</p>
-              <p className="pon">Rp 80.000 X 3 </p>
-            </div>
-            <div className="d-flex one">
-              <p>SubtotalL</p>
-              <p className="pin">Rp 240.000</p>
-            </div>
-            <div className="d-flex one">
-              <p>Shipping</p>
-              <p className="pin">Rp 20.000</p>
-            </div>
-            <div className="d-flex one">
-              <p>Discount</p>
-              <p className="pin">Rp 50.000</p>
-            </div>
-            <div className="d-flex one">
-              <p>Total</p>
-              <p className="pan">Rp 210.000</p>
-            </div>
 
-            <Button variant="light" style={{ border: " 2px solid black", width: "270px", marginBottom: "10px" }}>
-              SELECT PAYMENT
-            </Button>
-            <Button variant="dark" style={{ width: "270px" }}>
-              ORDER
-            </Button>
-          </Col>
-        </Row>
-      </Container>
+      <div className="d-flex align-items-center" style={{height: '650px'}}>
+        <Container>
+          <h1 className="mb-4 border-bottom border-3">BILLING DETAIL</h1>
+          <Row>
+            <Col md={8} className='border-end border-2'>
+              <Form>
+                <Form.Group className="mb-3" controlId="formBasicEmail">
+                  <Form.Label>Recipient's name</Form.Label>
+                  <Form.Control type="email" placeholder="Nama penerima" />
+                </Form.Group>
+
+                <Form.Group className="mb-3" controlId="formBasicPassword">
+                  <Form.Label>Address</Form.Label>
+                  <Form.Control type="text" placeholder="Alamat" />
+                </Form.Group>
+
+                <Form.Group className="mb-3" controlId="formBasicPassword">
+                  <Form.Label>Email</Form.Label>
+                  <Form.Control type="text" placeholder="Email" />
+                </Form.Group>
+
+                <Form.Group className="mb-3" controlId="formBasicPassword">
+                  <Form.Label>Phone</Form.Label>
+                  <Form.Control type="text" placeholder="No telfon" />
+                </Form.Group>
+
+                <Form.Text className="text-muted">
+                  *Silahkan cek kembali data pembelian anda sebelum order
+                </Form.Text>
+              </Form>
+            </Col>
+
+            <Col>
+              <Table striped>
+                <thead>
+                  <tr>
+                    <th>CART TOTAL</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Subtotal</td>
+                    <td className="text-end fw-semibold">Rp 200.000</td>
+                  </tr>
+                  <tr>
+                    <td>Shipping</td>
+                    <td className="text-end fw-semibold">Rp 10.000</td>
+                  </tr>
+                  <tr>
+                    <td>Discount</td>
+                    <td className="text-end fw-semibold">-Rp 30.000</td>
+                  </tr>
+                  <tr>
+                    <td>Total</td>
+                    <td className="text-end fw-semibold">Rp 180.000</td>
+                  </tr>
+                </tbody>
+              </Table>
+
+              <Button
+                variant="secondary"
+                className="mb-2"
+                style={{ width: "100%" }}
+              >
+                SELECT PAYMENT
+                <i class="fa-regular fa-credit-card fa-lg ms-2"></i>
+              </Button>
+              <Button
+                variant="secondary"
+                className="mb-2"
+                style={{ width: "100%" }}
+              >
+                ORDER
+                <i class="fa-solid fa-cart-shopping fa-lg ms-2"></i>
+              </Button>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+
       <Footer />
     </div>
   );
 }
 
-export default BasicExample;
+export default Order;

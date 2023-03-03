@@ -5,7 +5,7 @@ import Login from "./pages/Login"
 import ProductDetail from "./pages/ProductDetail";
 import Register from "./pages/Register"
 import Cart from "./pages/Cart"
-import Order from "./pages/Order"
+import Order from "./pages/Order";
 import './css/Index.css'
 
 function App() {
