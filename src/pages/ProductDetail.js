@@ -64,6 +64,7 @@ const ProductDetail = () => {
                   <Button variant="outline-secondary" className="mb-2" href="/order">
                     CHECHKOUT
                   </Button>
+                  
                 </div>
 
                 <Card.Text>
