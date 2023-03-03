@@ -50,8 +50,8 @@ const ProductDetail = () => {
                     <option>Size XL Stock 10</option>
                   </select>
                 </Card.Text>
-
-                <div className="container">
+                
+                <div className="mt-4 mb-3">
                   <div className="count">
                     <button className="decrement" onClick={decrementCount}>
                       -
@@ -61,8 +61,8 @@ const ProductDetail = () => {
                       +
                     </button>
                   </div>
-                  <Button variant="outline-secondary" className="mb-2">
-                    ADD TO CART
+                  <Button variant="outline-secondary" className="mb-2" href="/order">
+                    CHECHKOUT
                   </Button>
                 </div>
 
