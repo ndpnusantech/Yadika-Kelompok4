@@ -79,32 +79,3 @@ const Cart = () => {
 };
 
 export default Cart;
-
-/* <Col md={4}>
-<Table  striped>
-<thead>
-<tr>
-<th>CART TOTAL</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Subtotal</td>
-<td className='text-end fw-semibold'>Rp 200.000</td>
-</tr>
-<tr>
-<td>Shipping</td>
-<td className='text-end fw-semibold'>Rp 10.000</td>
-</tr>
-<tr>
-<td>Discount</td>
-<td className='text-end fw-semibold'>-Rp 30.000</td>
-</tr>
-<tr>
-<td>Total</td>
-<td className='text-end fw-semibold'>Rp 180.000</td>
-</tr>
-</tbody>
-</Table>       
-<Button variant="secondary" style={{width: '100%'}}>CHECKOUT</Button>
-</Col> */
