@@ -66,7 +66,7 @@ const Cart = () => {
           </Table>
           
           <div className="d-flex justify-content-end">
-            <Button variant="secondary" className="me-2">SHOP</Button>
+            <Button href="/product" variant="secondary" className="me-2">SHOP</Button>
             <Button variant="secondary">CHECKOUT</Button>
           </div>
 
