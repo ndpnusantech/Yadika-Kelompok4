@@ -61,9 +61,11 @@ const ProductDetail = () => {
                       +
                     </button>
                   </div>
+
                   <Button variant="outline-secondary" className="mb-2">
                     ADD TO CART
                   </Button>
+                  
                 </div>
 
                 <Card.Text>

@@ -75,7 +75,7 @@ const Cart = () => {
         </tr>
       </tbody>
     </Table>       
-      <Button variant="secondary" style={{width: '100%'}}>CHECKOUT</Button>
+      <Button href='/order' variant="secondary" style={{width: '100%'}}>CHECKOUT</Button>
           </Col>
         </Row> 
       </div> 
