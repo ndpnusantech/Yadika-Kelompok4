@@ -61,8 +61,11 @@ const ProductDetail = () => {
                       +
                     </button>
                   </div>
-                  <Button variant="outline-secondary" className="mb-2" href="/order">
-                    CHECHKOUT
+                  <Button variant="outline-secondary" className="mb-2 me-2" href="/order">
+                    CHECKOUT
+                  </Button>
+                  <Button variant="outline-secondary" className="mb-2" href="/cart">
+                    ADD TO CART
                   </Button>
                   
                 </div>
@@ -81,6 +84,8 @@ const ProductDetail = () => {
       </Container>
 
       <Footer />
+
+      
     </div>
   );
 };

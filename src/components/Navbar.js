@@ -8,7 +8,7 @@ function Navigation() {
   return (
     <Navbar bg="light" className='shadow' sticky="top">
       <Container position='relative'>
-        <Navbar.Brand href="#home" className='fs-3 fw-bold'>T - Clasic</Navbar.Brand>
+        <Navbar.Brand href="#home" className='fs-3 fw-bold'>T - Classic</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
@@ -33,7 +33,7 @@ function Navigation() {
               <i class="fa-solid fa-cart-shopping"></i>
             </Nav.Link>
           </Nav>
-          <Nav.Link href="/login" className="log">
+          <Nav.Link href="/login" className="ms-4">
             Login
           </Nav.Link>
         </Navbar.Collapse>
