@@ -1,7 +1,5 @@
-import { Button, Col, Container, Row, } from "react-bootstrap";
+import { Button, Container } from "react-bootstrap";
 import Form from 'react-bootstrap/Form'
-// import image from "../image/blck.jfif";
-// import "../css/login.css";
 
 const Login = () => {
   return (

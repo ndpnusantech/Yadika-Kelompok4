@@ -1,6 +1,5 @@
 import { Button, Form } from "react-bootstrap";
-import image from "../image/blck.jfif";
-import "../css/login.css";
+import image from "../asset/image/blck.jfif";
 
 
 const freeRegister = () => {

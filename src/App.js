@@ -6,7 +6,7 @@ import ProductDetail from "./pages/ProductDetail";
 import Register from "./pages/Register"
 import Cart from "./pages/Cart"
 import Order from "./pages/Order";
-import './css/Index.css'
+import './asset/css/Index.css'
 
 function App() {
   return (
