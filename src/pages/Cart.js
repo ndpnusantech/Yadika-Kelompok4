@@ -9,7 +9,7 @@ const Cart = () => {
     <div>
       <Navbar />
 
-      <div className="d-flex justify-content-center p-4" style={{height: '500px'}} >
+      <div className="d-flex align-items-center p-4" style={{height: '650px'}} >
         <Container className="p-4">
           <Table striped>
             <thead>
@@ -41,6 +41,7 @@ const Cart = () => {
                   <p className="fw-semibold mt-5 text-center">Rp 80.000</p>
                 </td>
               </tr>
+              
               <tr>
                 <td className="fs-4 fw-semibold">
                   <img
@@ -66,8 +67,8 @@ const Cart = () => {
           </Table>
           
           <div className="d-flex justify-content-end">
-            <Button href="/product" variant="secondary" className="me-2">SHOP</Button>
-            <Button variant="secondary">CHECKOUT</Button>
+            <Button href="/product" variant="secondary" className="me-2">ORDER MORE</Button>
+            <Button variant="secondary" href="/order">CHECKOUT</Button>
           </div>
 
         </Container>

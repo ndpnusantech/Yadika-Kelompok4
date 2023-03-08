@@ -14,15 +14,6 @@ const ProductCard = ({ product }) => {
           <Card.Title>{product.ProductName}</Card.Title>
           <Card.Text>Category: {product.Category}</Card.Text>
           <Card.Text>Price: {product.Price}</Card.Text>
-          <Button
-            style={{
-              width: "100%",
-              backgroundColor: "#252525",
-              borderColor: "#252525",
-            }}
-          >
-            Add to Cart
-          </Button>
         </Card.Body>
       </Card>
     </Link>
