@@ -3,7 +3,7 @@ import { useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer"
 import { Container, Card, Row, Col, Button } from "react-bootstrap";
-import "../css/counter.css";
+import "../asset/css/counter.css";
 
 const ProductDetail = () => {
   const [count, setCount] = useState(0);
