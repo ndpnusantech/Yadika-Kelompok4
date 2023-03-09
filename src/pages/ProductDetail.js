@@ -3,7 +3,7 @@ import { useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer"
 import { Container, Card, Row, Col, Button } from "react-bootstrap";
-import "../css/counter.css";
+import "../asset/css/counter.css";
 
 const ProductDetail = () => {
   const [count, setCount] = useState(0);
@@ -50,8 +50,8 @@ const ProductDetail = () => {
                     <option>Size XL Stock 10</option>
                   </select>
                 </Card.Text>
-
-                <div className="container">
+                
+                <div className="mt-4 mb-3">
                   <div className="count">
                     <button className="decrement" onClick={decrementCount}>
                       -
@@ -61,8 +61,10 @@ const ProductDetail = () => {
                       +
                     </button>
                   </div>
-
-                  <Button variant="outline-secondary" className="mb-2">
+                  <Button variant="outline-secondary" className="mb-2 me-2" href="/order">
+                    CHECKOUT
+                  </Button>
+                  <Button variant="outline-secondary" className="mb-2" href="/cart">
                     ADD TO CART
                   </Button>
                   
@@ -82,6 +84,8 @@ const ProductDetail = () => {
       </Container>
 
       <Footer />
+
+      
     </div>
   );
 };

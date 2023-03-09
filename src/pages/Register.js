@@ -1,7 +1,5 @@
-import { Col, Container, Row } from "react-bootstrap";
-import Button from "react-bootstrap/Button";
-import Form from "react-bootstrap/Form";
-import "../css/login.css"
+import { Button, Form } from "react-bootstrap";
+import image from "../asset/image/blck.jfif";
 
 function BasicExample() {
   return (

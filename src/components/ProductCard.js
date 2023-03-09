@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Card } from "react-bootstrap";
-import { DataProduct } from "../data/Data";
+import { DataProduct } from "../asset/data/Data";
 import "swiper/swiper-bundle.css";
 
 const ProductCard = ({ product }) => {

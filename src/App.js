@@ -5,10 +5,8 @@ import Login from "./pages/Login"
 import ProductDetail from "./pages/ProductDetail";
 import Register from "./pages/Register"
 import Cart from "./pages/Cart"
-import Order from "./pages/Order"
-import CategoryShirt from "./pages/CategoryShirt"
-import CategorySweater from "./pages/CategorySweater"
-import './css/Index.css'
+import Order from "./pages/Order";
+import './asset/css/Index.css'
 
 function App() {
   return (

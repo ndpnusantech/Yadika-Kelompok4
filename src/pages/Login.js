@@ -1,34 +1,35 @@
-import { Col, Container, Row } from "react-bootstrap";
-import Button from "react-bootstrap/Button";
-import Form from "react-bootstrap/Form";
-import "../css/login.css"
+import { Button, Container } from "react-bootstrap";
+import Form from 'react-bootstrap/Form'
 
-function BasicExample() {
+const Login = () => {
   return (
-    <div className="back d-flex">
-      <Container className="">
-        <Row className="justify-content-center align-items-center h-100">
-          <Col className="col-6 ">
-            <h1>Login</h1>
-            <p>asigdcasdbvuasd </p>
-            <Form.Label>Email address</Form.Label>
-            <Form.Control type="email" placeholder="Enter email" className="mb-2" />
-            <Form.Label>Password</Form.Label>
-            <Form.Control type="password" placeholder="Password" className="mb-3"/>
-            <a href="" className="item text-end">Forgot Password</a>
-            <div>
-            <Button variant="dark" type="submit" className=" mb-2 w-100 ">Login</Button>
-            <Button variant="primary" type="submit" className="bg-light text-dark w-100 border-dark">With google</Button>
-            </div>
-            <span className="forgot">Belum punya akun ? <a href="/register">Register</a></span>
-          </Col>
-        </Row>
-      </Container>
-      <Container className="bg-primary">
-          <img src="img/p2.jfif"/>
-      </Container>
+    <div>
+      <div className="d-flex">
+        <Container>
+        <Form>
+                <Form.Group className="w-50">
+                  <h1 className="border-bottom border-3 pb-2 mb-4">Login</h1>
+
+                  <Form.Label>Usename</Form.Label>
+                  <Form.Control type="text" placeholder="Username" name="username" />
+
+                  <Form.Label className="w-50 mt-2">Password</Form.Label>
+                  <Form.Control type="password" placeholder="Password" name='password' />
+
+                  <Form.Text className="">
+                    Not have an account ?
+                    <a href='/register'> Register</a>
+                  </Form.Text>
+
+                  <Button variant="secondary" type="submit" className="mt-3 w-100">
+                    Login
+                  </Button>
+                </Form.Group>
+              </Form>
+        </Container>
+      </div>
     </div>
   );
-}
+};
 
-export default BasicExample;
+export default Login;
