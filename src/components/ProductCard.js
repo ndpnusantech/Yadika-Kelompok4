@@ -19,7 +19,6 @@ const ProductCard = ({ product }) => {
     </Link>
   );
 };
-
 const ProductCarousel = () => {
   return (
     <div>
@@ -48,5 +47,4 @@ const ProductCarousel = () => {
     </div>
   );
 };
-
 export default ProductCarousel;
