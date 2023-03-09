@@ -10,7 +10,7 @@ function BasicExample() {
         <Row className="justify-content-center align-items-center h-100">
           <Col className="col-6 ">
             <h1>Login</h1>
-            <p>asigdcasdbvuasd geqad</p>
+            <p>asigdcasdbvuasd </p>
             <Form.Label>Email address</Form.Label>
             <Form.Control type="email" placeholder="Enter email" className="mb-2" />
             <Form.Label>Password</Form.Label>
