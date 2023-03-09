@@ -7,6 +7,8 @@ import Register from "./pages/Register"
 import Cart from "./pages/Cart"
 import Order from "./pages/Order";
 import Profile from "./pages/Profile";
+import CategoryShirt from './pages/CategoryShirt'
+import CategorySweater from './pages/CategorySweater'
 import './asset/css/Index.css'
 
 function App() {

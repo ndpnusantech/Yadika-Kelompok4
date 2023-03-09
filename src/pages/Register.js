@@ -1,5 +1,4 @@
-import { Button, Form } from "react-bootstrap";
-import image from "../asset/image/blck.jfif";
+import { Container, Button, Form, Row, Col } from "react-bootstrap";
 
 function BasicExample() {
   return (
