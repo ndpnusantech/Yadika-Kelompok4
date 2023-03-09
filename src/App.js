@@ -6,6 +6,7 @@ import ProductDetail from "./pages/ProductDetail";
 import Register from "./pages/Register"
 import Cart from "./pages/Cart"
 import Order from "./pages/Order";
+import Completeorder from "./pages/Complete";
 import './asset/css/Index.css'
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/productDetail" element={< ProductDetail/>} />
         <Route path="/cart" element={< Cart/>} />
         <Route path="/order" element={< Order/>} />
+        <Route path="/complete" element={< Completeorder/>} />
       </Routes>
     </BrowserRouter>
   );
