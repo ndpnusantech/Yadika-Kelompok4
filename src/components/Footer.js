@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="containFooter">
-        <p className="fs-3 fw-bold">T - Clasic</p>
+        <p className="fs-3 fw-bold">T - Classic</p>
         <Row className="justify-content-center m-1 p-2">
           <Col md="10">
             <h4>ABOUT</h4>
@@ -38,5 +38,4 @@ const Footer = () => {
     </div>
   );
 };
-
 export default Footer;

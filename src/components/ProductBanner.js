@@ -2,17 +2,20 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import banner from '../image/banner.jpg'
 import banner2 from '../image/banner2.jpg'
 import banner3 from '../image/banner3.jpg'
+
 // Import Swiper styles
 // import "swiper/css";
 // import "swiper/css/effect-fade";
 // import "swiper/css/navigation";
 // import "swiper/css/pagination";
+import "swiper/css";
+import "swiper/css/effect-fade";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 
 // import required modules
 import { EffectFade, Navigation, Pagination } from "swiper";
-
-
 const ProductBanner = () => {
   return (
     <Swiper
@@ -38,6 +41,4 @@ const ProductBanner = () => {
   </Swiper>
   );
 }
-
 export default ProductBanner
-

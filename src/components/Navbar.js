@@ -1,25 +1,21 @@
-import Container from "react-bootstrap/Container";
+import { Container } from "react-bootstrap";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import "../css/login.css";
 
 function Navigation() {
   return (
     <Navbar bg="light" className='shadow' sticky="top">
       <Container position='relative'>
-        <Navbar.Brand href="#home" className='fs-3 fw-bold'>T - Clasic</Navbar.Brand>
+        <Navbar.Brand href="#home" className='fs-3 fw-bold'>T - Classic</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="/" className='ms-5'>Home</Nav.Link>
             <Nav.Link href="/product" className='ms-3 me-3'>Product</Nav.Link>
             <NavDropdown title="Category" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">My Order</NavDropdown.Item>
+              <NavDropdown.Item href="/category">T-shirt Pria</NavDropdown.Item>
+              <NavDropdown.Item href="/category">Sweater</NavDropdown.Item>
             </NavDropdown>
           </Nav>
           <Nav className="">
@@ -33,7 +29,7 @@ function Navigation() {
               <i class="fa-solid fa-cart-shopping"></i>
             </Nav.Link>
           </Nav>
-          <Nav.Link href="/login" className="log">
+          <Nav.Link href="/login" className="ms-4">
             Login
           </Nav.Link>
         </Navbar.Collapse>
@@ -41,5 +37,4 @@ function Navigation() {
     </Navbar>
   );
 }
-
 export default Navigation;

@@ -1,36 +1,34 @@
-import { Form, Button } from "react-bootstrap";
-import image from "../image/blck.jfif"
-import "../css/login.css";
+import { Col, Container, Row } from "react-bootstrap";
+import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
+import "../css/login.css"
 
-const Login = () => {
-
+function BasicExample() {
   return (
-    <div className="from">
-      <Form className="fromLogin">
-        <h1 className="heading">Login</h1>
-        <Form.Group className="mb-3 username " controlId="formBasicEmail">
-          <Form.Label>Email address</Form.Label>
-          <Form.Control type="email" placeholder="Enter email" />
-        </Form.Group>
-        <Form.Group className="mb-2 password" controlId="formBasicPassword">
-          <Form.Label>Password</Form.Label>
-          <Form.Control type="password" placeholder="Password" />
-        </Form.Group>
-        <div className="regis d-flex ">
-        <p>Belum Pernah login ? </p> 
-        <a href="/register" className="">Register</a>
-        </div>
-        <Button id="klik" variant="primary" type="submit">
-          Submit
-        </Button>
-      </Form>
-      <img src={image} alt="" className="gambar"/>
+    <div className="back d-flex">
+      <Container className="">
+        <Row className="justify-content-center align-items-center h-100">
+          <Col className="col-6 ">
+            <h1>Login</h1>
+            <p>asigdcasdbvuasd geqad</p>
+            <Form.Label>Email address</Form.Label>
+            <Form.Control type="email" placeholder="Enter email" className="mb-2" />
+            <Form.Label>Password</Form.Label>
+            <Form.Control type="password" placeholder="Password" className="mb-3"/>
+            <a href="" className="item text-end">Forgot Password</a>
+            <div>
+            <Button variant="dark" type="submit" className=" mb-2 w-100 ">Login</Button>
+            <Button variant="primary" type="submit" className="bg-light text-dark w-100 border-dark">With google</Button>
+            </div>
+            <span className="forgot">Belum punya akun ? <a href="/register">Register</a></span>
+          </Col>
+        </Row>
+      </Container>
+      <Container className="bg-primary">
+          <img src="img/p2.jfif"/>
+      </Container>
     </div>
   );
+}
 
-};
-
-
-
-
-export default Login;
+export default BasicExample;

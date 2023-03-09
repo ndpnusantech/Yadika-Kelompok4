@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Card, Button } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import { DataProduct } from "../data/Data";
 import "swiper/swiper-bundle.css";
 
@@ -14,21 +14,11 @@ const ProductCard = ({ product }) => {
           <Card.Title>{product.ProductName}</Card.Title>
           <Card.Text>Category: {product.Category}</Card.Text>
           <Card.Text>Price: {product.Price}</Card.Text>
-          <Button
-            style={{
-              width: "100%",
-              backgroundColor: "#252525",
-              borderColor: "#252525",
-            }}
-          >
-            Add to Cart
-          </Button>
         </Card.Body>
       </Card>
     </Link>
   );
 };
-
 const ProductCarousel = () => {
   return (
     <div>
@@ -57,5 +47,4 @@ const ProductCarousel = () => {
     </div>
   );
 };
-
 export default ProductCarousel;

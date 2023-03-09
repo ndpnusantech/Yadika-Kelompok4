@@ -1,42 +1,34 @@
-import { Button, Form } from "react-bootstrap";
-import image from "../image/blck.jfif";
-import "../css/login.css";
+import { Col, Container, Row } from "react-bootstrap";
+import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
+import "../css/login.css"
 
-
-const freeRegister = () => {
+function BasicExample() {
   return (
-    <div>
-      <Form className="fromLogin1">
-        <h1 className="heading">Register</h1>
-        <Form.Group className="mb-1 username" controlId="formBasicUsername">
-          <Form.Label>Username</Form.Label>
-          <Form.Control type="text" placeholder="Username" />
-        </Form.Group>
-        <Form.Group className="mb-1 phone" controlId="formBasicNoHandphone">
-          <Form.Label>No.Hp</Form.Label>
-          <Form.Control type="number" placeholder="No.Hp" />
-        </Form.Group>
-        <Form.Group className="mb-1 mail" controlId="formBasicEmail">
-          <Form.Label>Email Address</Form.Label>
-          <Form.Control type="email" placeholder="email" />
-        </Form.Group>
-        <Form.Group className="mb-2 password" controlId="formBasicPassword">
-          <Form.Label>Password</Form.Label>
-          <Form.Control type="password" placeholder="Password" />
-        </Form.Group>
-        <div className="regis d-flex">
-          <p>Jika sudah mempunyai akun silahkan </p>
-          <a href="/login" className="ms-2">
-            Login
-          </a>
-        </div>
-        <Button variant="primary" type="submit">
-          Submit
-        </Button>
-      </Form>
-      <img src={image} alt="" className="gambar2" />
+    <div className="back d-flex">
+      <Container className="">
+        <Row className="justify-content-center align-items-center h-100">
+          <Col className="col-6 ">
+            <h1>Register</h1>
+            <p>asigdcasdbvuasd geqad</p>
+            <Form.Label>Usename</Form.Label>
+            <Form.Control type="text" placeholder="Username" className="mb-2" />
+            <Form.Label>Email address</Form.Label>
+            <Form.Control type="email" placeholder="Enter email" className="mb-2" />
+            <Form.Label>Password</Form.Label>
+            <Form.Control type="password" placeholder="Password" className="mb-3"/>
+            <div>
+            <Button variant="dark" type="submit" className=" mb-2 w-100 ">Register</Button>
+            </div>
+            <span className="forgot">Sudah  punya akun ? <a href="/login">Register</a></span>
+          </Col>
+        </Row>
+      </Container>
+      <Container className="bg-primary">
+          <img src="img/p2.jfif"/>
+      </Container>
     </div>
   );
-};
+}
 
-export default freeRegister;
+export default BasicExample;
