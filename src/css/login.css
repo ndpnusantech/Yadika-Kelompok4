@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.back{
+    height: 100vh;
+}
+.item{
+    margin: 10px 0;
+    display: block;
+}
+.one{
+    border: none;
+}
+.forgot{
+    margin-top: 20px;
+    display: block;
+}
