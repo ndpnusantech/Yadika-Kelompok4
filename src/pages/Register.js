@@ -1,5 +1,4 @@
 import { Button, Form } from "react-bootstrap";
-import image from "../asset/image/blck.jfif";
 
 function BasicExample() {
   return (
@@ -18,12 +17,11 @@ function BasicExample() {
             <div>
             <Button variant="dark" type="submit" className=" mb-2 w-100 ">Register</Button>
             </div>
-            <span className="forgot">Sudah  punya akun ? <a href="/login">Register</a></span>
+            <span className="forgot">Sudah  punya akun ? <a href="/login">Login</a></span>
           </Col>
         </Row>
       </Container>
       <Container className="bg-primary">
-          <img src="img/p2.jfif"/>
       </Container>
     </div>
   );
