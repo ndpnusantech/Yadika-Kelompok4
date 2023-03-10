@@ -12,8 +12,6 @@ import "swiper/css/pagination";
 
 // import required modules
 import { EffectFade, Navigation, Pagination } from "swiper";
-
-
 const ProductBanner = () => {
   return (
     <Swiper
@@ -39,6 +37,4 @@ const ProductBanner = () => {
   </Swiper>
   );
 }
-
 export default ProductBanner
-
