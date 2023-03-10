@@ -3,7 +3,7 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import "../asset/css/login.css"
 
-function BasicExample() {
+function Login() {
   return (
     <div className="back d-flex">
       <Container className="">
@@ -24,12 +24,12 @@ function BasicExample() {
           </Col>
         </Row>
       </Container>
-      <Container className="bg-primary">
-          <img src="img/p2.jfif"/>
+      <Container className=""  style={{backgroundColor: '#818181'}}>
+          <img src="../image/sapiens.png" width={740} alt=""/>
       </Container>
     </div>
   );
 }
 
-export default BasicExample;
+export default Login;
 
