@@ -23,8 +23,8 @@ function App() {
         <Route path="/productDetail" element={< ProductDetail/>} />
         <Route path="/cart" element={< Cart/>} />
         <Route path="/order" element={< Order/>} />
-        <Route path="/category" element={<CategoryShirt/>} />
-        <Route path="/category" element={<CategorySweater/>} />
+        <Route path="/categoryShirt" element={< CategoryShirt/>} />
+        <Route path="/categorySweater" element={< CategorySweater/>} />
       </Routes>
     </BrowserRouter>
   );

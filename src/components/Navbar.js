@@ -20,13 +20,10 @@ function Navigation() {
               Product
             </Nav.Link>
             <NavDropdown title="Category" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
+              <NavDropdown.Item href="/categoryShirt">T-Shirt</NavDropdown.Item>
+              <NavDropdown.Item href="/categorySweater">
+                Sweater
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">My Order</NavDropdown.Item>
             </NavDropdown>
           </Nav>
           <Nav className="">
