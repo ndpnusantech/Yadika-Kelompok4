@@ -54,21 +54,18 @@ function MyOrder() {
 const MyProfile = () => {
   return (
     <Container>
+      <h4 className="fw-semibold pb-1 mt-3 border-bottom border-3">My Account</h4>
       <Row>
         <Col className="col-3 ">
           <Form.Label>Name</Form.Label>
           <Form.Control type="text" placeholder="Enter name" />
           <Form.Label>Email</Form.Label>
           <Form.Control type="email" placeholder="Enter email" />
-          <Form.Label>Old Password</Form.Label>
-          <Form.Control type="password" placeholder="Enter password" />
           <Form.Label>New Password</Form.Label>
           <Form.Control type="password" placeholder="Enter new password" />
-          <Form.Label>Confirm Password</Form.Label>
-          <Form.Control type="password" placeholder="confirm password" />
           <Form.Label>Profile Photo</Form.Label>
           <Form.Control type="file" placeholder="" />
-          <Button className="mt-4 w-50">Edit Profile</Button>
+          <Button className="mt-4 w-50 w-100">Edit Profile</Button>
         </Col>
       </Row>
     </Container>
