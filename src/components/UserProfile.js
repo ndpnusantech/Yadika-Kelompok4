@@ -14,8 +14,8 @@ const UserProfile = () => {
             <img src="../image/profile.jpg" className="border border-5 rounded-circle" width={90} alt="Profile" />
           </Col>
           <Col>
-            <p className="mt-2 mb-0 fs-5">Username</p>
-            <Button variant="secondary">Edit</Button>
+            <p className="mt-2 mb-0 ms-3 fs-5">Username</p>
+            <Button variant="secondary" className="ms-3">Edit</Button>
             <Button variant="secondary" className="ms-1">
               Logout
             </Button>
