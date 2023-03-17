@@ -1,7 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
-import "../asset/css/login.css"
+import "../../asset/css/login.css"
 
 function Login() {
   return (
@@ -15,7 +15,6 @@ function Login() {
             <Form.Control type="email" placeholder="Enter email" className="mb-2" />
             <Form.Label>Password</Form.Label>
             <Form.Control type="password" placeholder="Password" className="mb-3"/>
-            <a href="" className="item text-end">Forgot Password</a>
             <div>
             <Button variant="dark" type="submit" className=" mb-2 w-100 ">Login</Button>
             <Button variant="primary" type="submit" className="bg-light text-dark w-100 border-dark">With google</Button>

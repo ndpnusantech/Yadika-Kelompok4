@@ -1,14 +1,15 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import Product from "./pages/Product";
-import Login from "./pages/Login"
-import ProductDetail from "./pages/ProductDetail";
+import Product from "./pages/product/Product";
+import Login from "./pages/login/Login"
+import ProductDetail from "./pages/product/ProductDetail";
 import Register from "./pages/Register"
 import Cart from "./pages/Cart"
 import Order from "./pages/Order";
 import Profile from "./pages/Profile";
-import CategoryShirt from './pages/CategoryShirt'
-import CategorySweater from './pages/CategorySweater'
+import CategoryShirt from './pages/category/CategoryShirt'
+import CategorySweater from './pages/category/CategorySweater'
+import OrderComplete from "./pages/OrderComplete";
 import './asset/css/Index.css'
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path="/order" element={< Order/>} />
         <Route path="/categoryShirt" element={< CategoryShirt/>} />
         <Route path="/categorySweater" element={< CategorySweater/>} />
+        <Route path="/ordercomplete" element={< OrderComplete/>} />
       </Routes>
     </BrowserRouter>
   );
