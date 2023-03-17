@@ -1,13 +1,15 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import Product from "./pages/Product";
-import Login from "./pages/Login"
-import ProductDetail from "./pages/ProductDetail";
-import Register from "./pages/Register"
+import Product from "./pages/product/Product";
+import Login from "./pages/login/Login"
+import ProductDetail from "./pages/product/ProductDetail";
+import Register from "./pages/login/Register"
 import Cart from "./pages/Cart"
 import Order from "./pages/Order";
-import CategoryShirt from "./pages/CategoryShirt"
-import CategorySweater from "./pages/CategorySweater"
+import Profile from "./pages/Profile";
+import CategoryShirt from './pages/category/CategoryShirt'
+import CategorySweater from './pages/category/CategorySweater'
+import OrderComplete from "./pages/OrderComplete";
 import './asset/css/Index.css'
 
 function App() {
@@ -18,11 +20,13 @@ function App() {
         <Route path="/product" element={< Product/>} />
         <Route path="/login" element={< Login/>} />
         <Route path="/register" element={< Register/>} />
+        <Route path="/profile" element={< Profile/>} />
         <Route path="/productDetail" element={< ProductDetail/>} />
         <Route path="/cart" element={< Cart/>} />
         <Route path="/order" element={< Order/>} />
-        <Route path="/category" element={<CategoryShirt/>} />
-        <Route path="/category" element={<CategorySweater/>} />
+        <Route path="/categoryShirt" element={< CategoryShirt/>} />
+        <Route path="/categorySweater" element={< CategorySweater/>} />
+        <Route path="/ordercomplete" element={< OrderComplete/>} />
       </Routes>
     </BrowserRouter>
   );

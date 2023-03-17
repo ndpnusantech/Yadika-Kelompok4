@@ -9,7 +9,7 @@ function Order() {
     <div>
       <Navbar />
 
-      <div className="d-flex align-items-center mx-auto" style={{height: '110vh'}}>
+      <div className="d-flex align-items-center mx-auto" style={{height: '120vh'}}>
         <Container >
           <Row>
             <Col md={8}>

@@ -1,7 +1,7 @@
-import Navbar from "../components/Navbar"
-import Footer from "../components/Footer"
-import ProductCard from "../components/ProductCard"
-import NameProduct from "../components/NameProduct"
+import Navbar from "../../components/Navbar"
+import Footer from "../../components/Footer"
+import ProductCard from "../../components/ProductCard"
+import NameProduct from "../../components/NameProduct"
 
 const categori = () => {
   return(
