@@ -11,6 +11,9 @@ import Profile from "./pages/Profile";
 import CategoryShirt from './pages/category/CategoryShirt'
 import CategorySweater from './pages/category/CategorySweater'
 import OrderComplete from "./pages/OrderComplete";
+
+import BoxInfo from "./Admin/Box";
+import LineChart from "./Admin/chart";
 import './asset/css/Index.css'
 
 function App() {
@@ -29,6 +32,8 @@ function App() {
         <Route path="/categoryShirt" element={< CategoryShirt/>} />
         <Route path="/categorySweater" element={< CategorySweater/>} />
         <Route path="/ordercomplete" element={< OrderComplete/>} />
+        <Route path="/dashboard" element={< BoxInfo/>} />
+        <Route path="/widgets" element={<LineChart/>} />
       </Routes>
     </BrowserRouter>
   );

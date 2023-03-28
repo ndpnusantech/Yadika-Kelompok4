@@ -4,7 +4,7 @@ import "../asset/css/footer.css";
 const Footer = () => {
   return (
     <div className="footer">
-      <div className="containFooter">
+      <div className="containFooter">asda
         <p className="fs-3 fw-bold">T - Classic</p>
         <Row className="justify-content-center m-1 p-2">
           <Col md="10">

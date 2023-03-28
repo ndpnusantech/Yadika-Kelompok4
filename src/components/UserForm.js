@@ -152,74 +152,73 @@ const UserForm = () => {
             </Row>
           </Form >
 
-           {/* Modals */}
-           < Modal
+          {/* Modals */}
+          <Modal
             show={show}
             size="xl"
-            aria - labelledby="contained-modal-title-vcenter"
-          centered
-  />
-          {/* Modals Login */}
-          <Modal.Body Modal.Body id='Login' className='ms-3 me-3' >
-          <h1 className='mb-3 text'>LOGIN</h1>
-          <Form>
-            <Form.Group className="mb-4" controlId="exampleForm.ControlInput1">
-              <Form.Label className='text'>Email address *</Form.Label>
-              <Form.Control
-                type="email"
-                className='box'
-                placeholder="name@example.com"
-                autoFocus
-              />
-            </Form.Group>
-            <Form.Group className="mb-4" controlId="exampleForm.ControlInput1">
-              <Form.Label className='text'>Password *</Form.Label>
-              <Form.Control
-                type="Password"
-                className='box'
-                placeholder="Password"
-                autoFocus
-              />
-            </Form.Group>
-            <Button href="/Complete" variant="secondary btr" className="mb-" style={{ width: "160px" }} >
-              LOGIN
-            </Button>
-          </Form>
-        </Modal.Body >
-        {/* End Modals Login */}
+            aria-labelledby="contained-modal-title-vcenter"
+            centered
+          >
+            
+            <Modal.Body id='Login' className='ms-3 me-3'>
+              <h1 className='mb-3 text'>LOGIN</h1>
+              <Form>
+                <Form.Group className="mb-4" controlId="exampleForm.ControlInput1">
+                  <Form.Label className='text'>Email address *</Form.Label>
+                  <Form.Control
+                    type="email"
+                    className='box'
+                    placeholder="name@example.com"
+                    autoFocus
+                  />
+                </Form.Group>
+                <Form.Group className="mb-4" controlId="exampleForm.ControlInput1">
+                  <Form.Label className='text'>Password *</Form.Label>
+                  <Form.Control
+                    type="Password"
+                    className='box'
+                    placeholder="Password"
+                    autoFocus
+                  />
+                </Form.Group>
+                <Button href="/complete" variant="secondary btr" className="mb-" style={{ width: "160px" }} >
+                  LOGIN
+                </Button>
+              </Form>
+            </Modal.Body>
+         
+            <Modal.Body id='Registrasi' className='ms-3 me-3'>
+              <h1 className='mb-3 text'>REGISTER</h1>
+              <Form>
+                <Form.Group className="mb-4" controlId="exampleForm.ControlInput1">
+                  <Form.Label>Email address *</Form.Label>
+                  <Form.Control
+                    type="email"
+                    className='box'
+                    placeholder="name@example.com"
+                    autoFocus
+                  />
+                </Form.Group>
+                <Form.Group className="mb-4" controlId="exampleForm.ControlInput1">
+                  <Form.Label>Password *</Form.Label>
+                  <Form.Control
+                    type="Password"
+                    className='box'
+                    placeholder="Password"
+                    autoFocus
+                  />
+                </Form.Group>
+                <Button href="#" variant="secondary btr" className="mb-" style={{ width: "160px" }} >
+                  REGISTER
+                </Button>
+              </Form>
+            </Modal.Body>
+          </Modal>
+       
 
-        {/* Modals Register */}
-        <Modal.Body id='Registrasi' className='ms-3 me-3'>
-          <h1 className='mb-3 text'>REGISTER</h1>
-          <Form>
-            <Form.Group className="mb-4" controlId="exampleForm.ControlInput1">
-              <Form.Label>Email address *</Form.Label>
-              <Form.Control
-                type="email"
-                className='box'
-                placeholder="name@example.com"
-                autoFocus
-              />
-            </Form.Group>
-            <Form.Group className="mb-4" controlId="exampleForm.ControlInput1">
-              <Form.Label>Password *</Form.Label>
-              <Form.Control
-                type="Password"
-                className='box'
-                placeholder="Password"
-                autoFocus
-              />
-            </Form.Group>
-            <Button href="/Complete" variant="secondary btr" className="mb-" style={{ width: "160px" }} >
-              REGISTER
-            </Button>
-          </Form>
-        </Modal.Body>
-        {/* End Modals Register */}
 
-
-        {/* </Modal > */}
-        {/* End Modals */}
+          {/* </Modal > */}
+          {/* End Modals */}
 
 
           <Form.Select

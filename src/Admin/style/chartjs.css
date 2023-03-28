@@ -1,0 +1,26 @@
+canvas {
+    border: 8px solid;
+    border-image: linear-gradient(to right, #ff9a9e, #fad0c4, #fad0c4, #ff9a9e);
+    border-image-slice: 1;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    width: 23rem;
+}
+
+.chart-container {
+    margin: 7% 23%;
+}   
+
+.chart-container ul {
+    display: flex;
+}
+.chart-container li {
+    list-style: none;
+    margin-left: 4rem;
+    margin-top: -3rem;
+}
+
+.head-title h1 {
+    margin-top: 3%;
+	margin-left: 25%;
+    font-family: sans-serif;
+}
