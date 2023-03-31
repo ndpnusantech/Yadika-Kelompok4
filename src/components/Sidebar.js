@@ -21,62 +21,54 @@ const Sidebars = () => {
                         <button type="submit" className="search-btn"><i className='bx bx-search'></i></button>
                     </div>
                 </form>
-                <ul className="side-menu top">
-                    <li className="active">
+                <ul class="side-menu top">
+                    <li class="active">
                         <a href="#">
-                            <i className='bx bxs-dashboard'></i>
-                            <Nav.Link className="text" href="/dashboard">Dashboard</Nav.Link>
+                            <i class='bx bxs-dashboard'></i>
+                            <Nav.Link class="text" href="/dashboard">Dashboard</Nav.Link>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <i className='bx bxs-shopping-bag-alt'></i>
-                            <Nav.Link className="text">Widgets</Nav.Link>
+                            <i class='bx bxs-shopping-bag-alt'></i>
+                            <Nav.Link class="text">Widgets</Nav.Link>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <i className='bx bxs-doughnut-chart'></i>
-                            <Nav.Link className="text" href='/widgets'>Layouts Option</Nav.Link>
+                            <i class='bx bxs-doughnut-chart'></i>
+                            <Nav.Link class="text" href="/widgets">Layouts Option</Nav.Link>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <i className='bx bx-basket'></i>
-                            <Nav.Link className="text">Penjualan</Nav.Link>
+                            <i class='bx bx-basket'></i>
+                            <Nav.Link class="text">Penjualan</Nav.Link>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <i className='bx bxs-group'></i>
-                            <Nav.Link className="text">Laporan</Nav.Link>
+                            <i class='bx bxs-group'></i>
+                            <Nav.Link class="text">Laporan</Nav.Link>
                         </a>
                     </li>
                 </ul>
-                <ul className="side-menu">
+                <ul class="side-menu">
                     <li>
                         <a href="#">
-                            <i className='bx bxs-cog'></i>
-                            <span className="text">Settings</span>
+                            <i class='bx bxs-cog'></i>
+                            <Nav.Link class="text">Settings</Nav.Link>
                         </a>
                     </li>
                     <li>
-                        <a href="#" className="logout">
-                            <i className='bx bxs-log-out-circle'></i>
-                            <span className="text">Logout</span>
+                        <a href="#" class="logout">
+                            <i class='bx bxs-log-out-circle'></i>
+                            <Nav.Link class="text">Logout</Nav.Link>
                         </a>
                     </li>
                 </ul>
-            </section>
 
-
-
-            <section id="dashboard">
-                <nav>
-                    <i className='bx bx-menu'></i>
-                    <a href="#" className="nav-link">Home</a>
-                    <a href="#" className="nav-link">Contact</a>
-                </nav>
+               
             </section>
         </div>
     )

@@ -1,0 +1,77 @@
+[
+    {
+        "title": "Dashboard",
+        "icon": "bx bxs-dashboard"
+    },
+    {
+        "title": "Product",
+        "icon": "bx bxs-shopping-bag-alt",
+        "childrens": [
+            {
+                "title": "Product",
+                "path": "#"
+            },
+            {
+                "title": "Kategory & Tag",
+                "path": "#"
+            },
+            {
+                "title": "Stoking",
+                "path": "#"
+            },
+            {
+                "title": "Stok Bahan",
+                "path": "#"
+            }
+        ]
+    },
+    {
+        "title": "Promosi",
+        "icon": "bx bxs-doughnut-chart",
+        "childrens": [
+            {
+                "title": "Voucher",
+                "path": "#"
+            }
+        ]
+    },
+    {
+        "title": "Wawasan Data",
+        "icon": "bx bx-basket",
+        "childrens": [
+            {
+                "title": "Trapik",
+                "path": "#"
+            }
+        ]
+    },
+    {
+        "title": "Keuangan",
+        "icon": "bx bxs-group",
+        "childrens": [
+            {
+                "title": "Saldo Toko",
+                "path": "#"
+            },
+            {
+                "title": "Logistice Fee",
+                "path": "#"
+            }
+        ]
+    },
+    {
+        "title": "Pengaturan",
+        "icon": "bx bxs-group",
+        "childrens": [
+            {
+                "title": "Bantuan",
+                "path": "#"
+            },
+            {
+                "title": "Logout    ",
+                "path": "#"
+            }
+        ]
+    }
+
+]
