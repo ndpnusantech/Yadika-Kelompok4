@@ -1,7 +1,8 @@
-import Navbar from '../../components/Navbar'
-import ProductCard from '../../components/ProductCard'
-import Footer from '../../components/Footer'
-import ProductBanner from '../../components/ProductBanner'
+import Navbar from '../../components/navbar/Navbar'
+import ProductCard from '../../components/product/ProductCard'
+import Footer from '../../components/footer/Footer'
+import ProductBanner from '../../components/product/ProductBanner'
+import StripBar from '../../components/navbar/StripBar'
 
 const Product = () => {
   return (
@@ -9,9 +10,7 @@ const Product = () => {
       <Navbar />
       <ProductBanner />
 
-        <div className='p-4 border-bottom border-dark border-3'>
-          <h3 className='text-center fw-semibold' style={{margin: '0'}}>PRODUCT</h3>
-        </div>
+      <StripBar title='Product'/>
       
       <ProductCard />
       <ProductCard />

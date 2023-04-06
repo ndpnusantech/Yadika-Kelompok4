@@ -40,7 +40,7 @@ const CartTable = () => {
             <tr>
               <td className="fs-4 fw-semibold">
                 <img
-                  src="../image/product.png"
+                  src="../../image/product.png"
                   alt="Product"
                   className="mt-2 mb-2 me-5"
                   width={100}

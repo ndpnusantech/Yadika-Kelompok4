@@ -10,6 +10,12 @@ import Profile from "./pages/Profile";
 import CategoryShirt from './pages/category/CategoryShirt'
 import CategorySweater from './pages/category/CategorySweater'
 import OrderComplete from "./pages/OrderComplete";
+
+// Admin
+import Admin from "./pages/admin/Dashboard"
+import LoginAdmin from "./pages/admin/LoginAdmin"
+import AdminProduct from "./pages/admin/Product"; 
+
 import './asset/css/Index.css'
 
 function App() {
@@ -27,6 +33,11 @@ function App() {
         <Route path="/categoryShirt" element={< CategoryShirt/>} />
         <Route path="/categorySweater" element={< CategorySweater/>} />
         <Route path="/ordercomplete" element={< OrderComplete/>} />
+
+
+        <Route path="/admin" element={< LoginAdmin/>} />
+        <Route path="/adminhome" element={< Admin/>} />
+        <Route path="/admin-product" element={< AdminProduct/>} />
       </Routes>
     </BrowserRouter>
   );
