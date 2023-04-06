@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Button, Table, Form, Modal } from "react-bootstrap";
-// import "./product.css";
 
 const Product = () => {
   
