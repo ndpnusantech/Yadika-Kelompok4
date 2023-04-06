@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, Row, Col, Tabs, Tab } from "react-bootstrap";
-import { MyOrder, MyProfile } from "../components/MyAcc"
+import { MyOrder, MyProfile } from "../userAccount/MyAcc";
+
 const UserProfile = () => {
   return (
     <div>
@@ -26,9 +27,12 @@ const UserProfile = () => {
         <h3 className="fw-semibold mt-5 border-bottom border-3">Dashboard</h3>
         <Tabs id="uncontrolled-tab-example" className="mb-3">
           <Tab eventKey="order" title="My Order">
+
             <MyOrder/>
+          
           </Tab>
           <Tab eventKey="profile" title="My Profile">
+
             <MyProfile/>
           </Tab>
         </Tabs>

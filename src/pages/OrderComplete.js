@@ -1,8 +1,8 @@
 import React from "react";
 import { Button, Card, Container } from "react-bootstrap";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import ProeductCard from "../components/ProductCard";
+import Navbar from "../components/navbar/Navbar";
+import Footer from "../components/footer/Footer";
+import ProeductCard from "../components/product/ProductCard";
 
 const OrderComplete = () => {
   return (

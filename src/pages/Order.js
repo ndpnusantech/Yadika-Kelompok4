@@ -1,7 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
-import UserForm from "../components/UserForm";
+import Footer from "../components/footer/Footer";
+import Navbar from "../components/navbar/Navbar";
+import UserForm from "../components/user/UserForm";
 import SubtotalTable from "../components/SubtotalTable";
 
 function Order() {

@@ -1,13 +1,14 @@
-import Navbar from "../../components/Navbar"
-import Footer from "../../components/Footer"
-import ProductCard from "../../components/ProductCard"
-import NameProduct from "../../components/NameProduct"
+import Navbar from "../../components/navbar/Navbar"
+import Footer from "../../components/footer/Footer"
+import ProductCard from "../../components/product/ProductCard"
+import StripBar from "../../components/navbar/StripBar"
 
 const Sweater = () => {
   return(
     <div>
       <Navbar/>
-      <NameProduct/>
+
+      <StripBar title='Sweater'/>
 
       <ProductCard/>
       <ProductCard/>

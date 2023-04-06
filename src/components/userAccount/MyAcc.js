@@ -15,7 +15,7 @@ function MyOrder() {
         <tbody>
           <tr>
             <td className="fs-4 fw-semibold">
-              <img src="../image/product.png" alt="Product" className="mt-2 ms-4 mb-2 me-4" width={70} />
+              <img src="../../image/product.png" alt="Product" className="mt-2 ms-4 mb-2 me-4" width={70} />
               T-Shirt Black Series S
             </td>
             <td>
@@ -31,7 +31,7 @@ function MyOrder() {
           </tr>
           <tr>
             <td className="fs-4 fw-semibold">
-              <img src="../image/product.png" alt="Product" className="mt-2 ms-4 mb-2 me-4" width={70} />
+              <img src="../../image/product.png" alt="Product" className="mt-2 ms-4 mb-2 me-4" width={70} />
               T-Shirt Black Series S
             </td>
             <td>

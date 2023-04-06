@@ -5,7 +5,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 
 function Navigation() {
   return (
-    <Navbar bg="light" className="shadow" sticky="top">
+    <Navbar bg="light" className="shadow" fixed='top'>
       <Container position="relative">
         <Navbar.Brand href="#home" className="fs-3 fw-bold">
           T - Classic

@@ -1,8 +1,8 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
+import Navbar from '../components/navbar/Navbar'
+import Footer from '../components/footer/Footer'
 import { Container } from 'react-bootstrap'
-import UserProfile from '../components/UserProfile'
+import UserProfile from '../components/user/UserProfile'
 
 const Profile = () => {
   return (

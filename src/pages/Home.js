@@ -1,8 +1,10 @@
-import ProductBanner from "../components/ProductBanner";
-import ProductCard from "../components/ProductCard";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-// import "../css/Index.css";
+import ProductBanner from "../components/product/ProductBanner";
+import ProductCard from "../components/product/ProductCard";
+import Navbar from "../components/navbar/Navbar";
+import Footer from "../components/footer/Footer";
+import PromoBanner from "../components/banner/PromoBanner";
+import StripBar from "../components/navbar/StripBar";
+import { Container } from "react-bootstrap";
 
 function Home() {
   return (
@@ -10,11 +12,14 @@ function Home() {
       <Navbar />
       <ProductBanner />
 
-      <div className="p-4 border-bottom border-dark border-3">
-        <h3 className="text-center fw-semibold" style={{margin: '0'}}>S SERIES</h3>
-      </div>
+      <StripBar title='Product'/>
 
+      <PromoBanner />
+      
+      <Container>
       <ProductCard />
+      </Container>
+      
       <Footer />
     </div>
   );
