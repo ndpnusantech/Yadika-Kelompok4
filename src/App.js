@@ -27,16 +27,16 @@ function App() {
         <Route path="/login" element={< Login/>} />
         <Route path="/register" element={< Register/>} />
         <Route path="/profile" element={< Profile/>} />
-        <Route path="/productDetail" element={< ProductDetail/>} />
+        <Route path="/product-detail" element={< ProductDetail/>} />
         <Route path="/cart" element={< Cart/>} />
         <Route path="/order" element={< Order/>} />
-        <Route path="/categoryShirt" element={< CategoryShirt/>} />
-        <Route path="/categorySweater" element={< CategorySweater/>} />
-        <Route path="/ordercomplete" element={< OrderComplete/>} />
+        <Route path="/category-shirt" element={< CategoryShirt/>} />
+        <Route path="/category-sweater" element={< CategorySweater/>} />
+        <Route path="/order-complete" element={< OrderComplete/>} />
 
 
         <Route path="/admin" element={< LoginAdmin/>} />
-        <Route path="/adminhome" element={< Admin/>} />
+        <Route path="/admin-dashboard" element={< Admin/>} />
         <Route path="/admin-product" element={< AdminProduct/>} />
       </Routes>
     </BrowserRouter>

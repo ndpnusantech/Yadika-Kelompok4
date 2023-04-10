@@ -1,154 +1,122 @@
-import { useState, useEffect } from "react";
-import { Button, Table, Form, Modal } from "react-bootstrap";
+import React, { useState } from "react";
+import ReactDOM from "react-dom";
+import { Container, Button, Modal, Table, Form } from "react-bootstrap";
 
-const Product = () => {
-  
-  const [data, setData] = useState(() => {
-  const savedData = localStorage.getItem("movieData");
-   
-    return savedData // Data Dummy
-      ? JSON.parse(savedData)
-      : [
-          {
-            id: 1,
-            title: "Kiko In The Deep Sea",
-            director: "Sally Wongso",
-            genre: "Kartun",
-            stok: 1050,
-            harga: "Rp.50.000,00",
-            tayang: "6 March 2023",
-            lokasi: "Cinema VII Bandung",
-            status: "Now Playing",
-          },
-          {
-            id: 2,
-            title: "Suzume no Tojimari",
-            director: "Makoto Shinkai",
-            genre: "Kartun",
-            stok: 950,
-            harga: "Rp.50.000,00",
-            tayang: "8 March 2023",
-            lokasi: "Cinema VII Bandung",
-            status: "Now Playing",
-          },
-        ];
+function App(props) {
+  const [data, setData] = useState([
+    {
+      id: 1,
+      name: "Product A",
+      type: "tshirt",
+      size: "M-L",
+      stock: 300,
+      price: "100.000",
+    },
+    {
+      id: 2,
+      name: "Product B",
+      type: "tshirt",
+      size: "M-L",
+      stock: 300,
+      price: "100.000",
+    },
+    {
+      id: 3,
+      name: "Product C",
+      type: "tshirt",
+      size: "M-L",
+      stock: 300,
+      price: "100.000",
+    },
+  ]);
+
+  const [formData, setFormData] = useState({
+    id: "",
+    name: "",
+    type: "",
+    size: "",
+    stock: "",
+    price: "",
   });
+  
+  const [editing, setEditing] = useState(false);
 
-  const [editData, setEditData] = useState(null);
+  const handleFormChange = (event) => {
+    setFormData({ ...formData, [event.target.name]: event.target.value });
+  };
 
-  useEffect(() => {
-    localStorage.setItem("movieData", JSON.stringify(data));
-  }, [data]);
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    if (!editing) {
+      const newId = data.length > 0 ? data[data.length - 1].id + 1 : 1;
+      setData([...data, { ...formData, id: newId }]);
+    } else {
+      setData(data.map((item) => (item.id === formData.id ? formData : item)));
+      setEditing(false);
+    }
+    setFormData({ id: "", name: "", type: "", size: "", stock: "", price: "" });
+  };
+
+  const handleEdit = (id) => {
+    const itemToEdit = data.find((item) => item.id === id);
+    setFormData(itemToEdit);
+    setEditing(true);
+    setModalShow(true);
+  };
 
   const handleDelete = (id) => {
-    const newData = data.filter((item) => item.id !== id);
-    setData(newData);
-  };
-  const handleEdit = (id) => {
-    const newData = data.find((item) => item.id === id);
-    setEditData(newData);
+    setData(data.filter((item) => item.id !== id));
   };
 
-  const handleSave = (event) => {
-    event.preventDefault();
-    const newData = data.map((item) => {
-      if (item.id === editData.id) {
-        return editData;
-      }
-      return item;
-    });
-    setData(newData);
-    setEditData(null);
-  };
+  // set modal
+  const [modalShow, setModalShow] = useState(false);
 
-  const handleChange = (event) => {
-    const { name, value } = event.target;
-    setEditData((prevState) => ({
-      ...prevState,
-      [name]: value,
-    }));
-  };
-
-  const handleAdd = () => {
-    const newProduct = {
-      id: data.length + 1,
-      product: "",
-      type: "",
-      series: "",
-      stok: 0,
-      size: "",
-      status: "",
-    };
-    setData([...data, newProduct]);
-  };
-
-  
-  
-  //Pop up
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
-
-  // Pop UP Edit
-  const [lihat, setLihat] = useState(false);
-
-  const handleTutup = () => setLihat(false);
-  const handleBuka = () => setLihat(true);
-
-  
-  
   return (
-    <div>
+    <div className="container">
+      <Container className="p-2">
+        <h1>Product List</h1>
 
-      <div className="table-admin">
         <Button
-          className="btn-add-product-admin"
-          variant="light"
-          onClick={handleAdd}
+          className="mb-3"
+          variant="primary"
+          onClick={() => setModalShow(true)}
         >
-          +
+          Add Product
         </Button>
-        <Table className="tr-admin">
+
+        <Table striped bordered hover className="text-center">
           <thead>
             <tr>
-              <th className="th-admin">ID</th>
-              <th className="th-admin">Product</th>
-              <th className="th-admin">Type</th>
-              <th className="th-admin">Series</th>
-              <th className="th-admin">Stock</th>
-              <th className="th-admin">Price</th>
-              <th className="th-admin">Size</th>
-              <th className="th-admin">Status</th>
-              <th className="th-admin">Action</th>
+              <th>#id</th>
+              <th>Name</th>
+              <th>Type</th>
+              <th>Size</th>
+              <th>Stock</th>
+              <th>Price</th>
+              <th>Action</th>
             </tr>
           </thead>
           <tbody>
             {data.map((item) => (
               <tr key={item.id}>
-                <td className="td-admin">{item.id}</td>
-                <td className="td-admin">{item.product}</td>
-                <td className="td-admin">{item.type}</td>
-                <td className="td-admin">{item.series}</td>
-                <td className="td-admin">{item.stock}</td>
-                <td className="td-admin">{item.price}</td>
-                <td className="td-admin">{item.size}</td>
-                <td className="td-admin">{item.status}</td>
-                <td className="td-admin">
+                <td>{item.id}</td>
+                <td>{item.name}</td>
+                <td>{item.type}</td>
+                <td>{item.size}</td>
+                <td>{item.stock}</td>
+                <td>{item.price}</td>
+                <td>
                   <Button
-                    className="btn-edit-product-admin"
-                    variant="light"
-                    onClick={() => {
-                      handleBuka();
-                      handleEdit(item.id);
-                    }}
+                    className="btn-sm"
+                    variant="primary"
+                    onClick={() => handleEdit(item.id)}
                   >
                     Edit
-                  </Button>
+                  </Button>{" "}
                   <Button
-                    className="btn-delete-product-admin"
-                    variant="light"
-                    onClick={handleShow}
+                    className="btn-sm"
+                    variant="danger"
+                    onClick={() => handleDelete(item.id)}
                   >
                     Delete
                   </Button>
@@ -158,168 +126,107 @@ const Product = () => {
           </tbody>
         </Table>
 
-        {/* Pop Up Edit */}
+        {/* modal */}
 
-        {data.map((item) => (
+        <div>
           <Modal
-            show={lihat}
-            onHide={handleTutup}
-            key={item.id}
+            {...props}
             size="lg"
-            style={{ color: "black" }}
+            aria-labelledby="contained-modal-title-vcenter"
+            centered
+            show={modalShow}
+            onHide={() => setModalShow(false)}
           >
             <Modal.Header closeButton>
-              <Modal.Title>Edit Product</Modal.Title>
-            </Modal.Header>
-            <Modal.Body>
-              {editData && (
-                <Form onSubmit={handleSave} className="edit-form-admin">
-                  <div className="tabel-input-product">
-                   
-                    {/* Product */}
-                   
-                    <label>
-                      Product
-                      <input
-                        type="text"
-                        name="product"
-                        value={editData.product}
-                        onChange={handleChange}
-                        className="input-product-admin"
-                      />
-                    </label>
-                    
-                    {/*  type */}
-                    
-                    <label>
-                      Type
-                      <input
-                        type="text"
-                        name="type"
-                        value={editData.type}
-                        onChange={handleChange}
-                        className="input-product-admin"
-                      />
-                    </label>
-                  </div>
-                  <div className="tabel-input-product">
-
-                    {/* series */}
-
-                    <label>
-                      Series
-                      <input
-                        type="text"
-                        name="series"
-                        value={editData.series}
-                        onChange={handleChange}
-                        className="input-product-admin"
-                      />
-                    </label>
-
-                    {/* stock */}
-                    
-                    <label>
-                      Stok:
-                      <input
-                        type="number"
-                        name="stock"
-                        value={editData.stock}
-                        onChange={handleChange}
-                        className="input-product-admin"
-                      />
-                    </label>
-                  </div>
-                  <div className="tabel-input-product">
-
-                    {/* size */}
-                    
-                    <label>
-                      Size
-                      <input
-                        type="text"
-                        name="size"
-                        value={editData.size}
-                        onChange={handleChange}
-                        className="input-product-admin"
-                      />
-                    </label>
-                  </div>
-                  <div className="tabel-input-product">
-                    
-                    {/* status */}
-
-                    <label>
-                      Status
-                      <input
-                        type="text"
-                        name="status"
-                        value={editData.status}
-                        onChange={handleChange}
-                        className="input-product-admin"
-                      />
-                    </label>
-                    
-                    {/* price */}
-                    
-                    <label>
-                      Price
-                      <input
-                        type="text"
-                        name="price"
-                        value={editData.price}
-                        onChange={handleChange}
-                        className="input-product-admin"
-                      />
-                    </label>
-                  </div>
-                </Form>
-              )}
-            </Modal.Body>
-            <Modal.Footer>
-              <Button onClick={handleTutup}>Close</Button>
-              {/* Save button */}
-              <Button
-                className="btn-save-product-admin"
-                variant="light"
-                type="submit"
-                onClick={handleSave}
-              >
-                Save
-              </Button>
-            </Modal.Footer>
-          </Modal>
-        ))}
-
-        {/* //Pop up */}
-
-        {data.map((item) => (
-          <Modal show={show} onHide={handleClose} key={item.id}>
-            <Modal.Header closeButton>
-              <Modal.Title className="modal-title-product">
-                Hapus Product
+              <Modal.Title id="contained-modal-title-vcenter">
+                Product Form
               </Modal.Title>
             </Modal.Header>
-            <Modal.Body className="modal-body-product">
-              Apakah Anda Yakin Akan Menghapusnya?
-            </Modal.Body>
-            <Modal.Footer className="modal-footer-product">
-              <Button variant="secondary" onClick={handleClose}>
-                Cancel
-              </Button>
-              <Button
-                variant="primary"
-                className="btn-delete-product-admin"
-                onClick={() => handleDelete(item.id)}
-              >
-                Delete
-              </Button>
-            </Modal.Footer>
+            <Form onSubmit={handleSubmit}>
+              <Modal.Body>
+                <h2>{editing ? "Edit" : "Add"} Product</h2>
+
+                {/* product name */}
+                <Form.Group controlId="formBasicName">
+                  <Form.Label>Name</Form.Label>
+                  <Form.Control
+                    type="text"
+                    placeholder="Enter name"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleFormChange}
+                  />
+                </Form.Group>
+
+                {/* product type */}
+                <Form.Group controlId="formBasicType">
+                  <Form.Label>Type</Form.Label>
+                  <Form.Control
+                    type="text"
+                    placeholder="Enter type"
+                    name="type"
+                    value={formData.type}
+                    onChange={handleFormChange}
+                  />
+                </Form.Group>
+
+                {/* product price */}
+                <Form.Group controlId="formBasicSize">
+                  <Form.Label>Size</Form.Label>
+                  <Form.Control
+                    type="teks"
+                    placeholder="Enter size"
+                    name="size"
+                    value={formData.size}
+                    onChange={handleFormChange}
+                  />
+                </Form.Group>
+
+                {/* product stock */}
+                <Form.Group controlId="formBasicStock">
+                  <Form.Label>Stock</Form.Label>
+                  <Form.Control
+                    type="number"
+                    placeholder="Enter stock"
+                    name="stock"
+                    value={formData.stock}
+                    onChange={handleFormChange}
+                  />
+                </Form.Group>
+
+                {/* product price */}
+                <Form.Group controlId="formBasicPrice">
+                  <Form.Label>Price</Form.Label>
+                  <Form.Control
+                    type="number"
+                    placeholder="Enter price"
+                    name="price"
+                    value={formData.price}
+                    onChange={handleFormChange}
+                  />
+                </Form.Group>
+              </Modal.Body>
+
+              <Modal.Footer>
+                <Button
+                  variant="primary"
+                  type="submit"
+                  onClick={() => setModalShow(false)}
+                >
+                  {editing ? "Save" : "Add"}
+                </Button>
+                <Button onClick={() => setModalShow(false)}>Close</Button>
+              </Modal.Footer>
+
+            </Form>
           </Modal>
-        ))}
-      </div>
+        </div>
+
+        {/* product form */}
+      </Container>
     </div>
   );
-};
+}
 
-export default Product;
+ReactDOM.render(<App />, document.getElementById("root"));
+export default App;

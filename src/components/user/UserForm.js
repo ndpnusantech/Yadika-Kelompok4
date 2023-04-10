@@ -8,7 +8,7 @@ const UserForm = () => {
     <div>
       <Container>
         <h1 className="mb-4 border-bottom border-3">BILLING DETAIL</h1>
-        <Form action="/ordercomplete">
+        <Form action="/order-complete">
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Recipient's name</Form.Label>
             <Form.Control
