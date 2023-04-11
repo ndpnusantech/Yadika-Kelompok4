@@ -24,6 +24,7 @@ function Navigation() {
                 To Shop
               </NavDropdown.Item>
             </NavDropdown>
+            <Nav.Link href="/admin-penjualan">Penjualan Product</Nav.Link>
           </Nav>
         
         </Navbar.Collapse>
