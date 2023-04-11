@@ -1,11 +1,11 @@
 import React from "react";
 import { Button, Row, Col, Tabs, Tab } from "react-bootstrap";
-import { MyOrder, MyProfile } from "../userAccount/MyAcc";
+import { MyOrder, MyProfile } from "./MyAcc";
 
 const UserProfile = () => {
   return (
     <div>
-      <div className="mt-3 p-4" style={{ backgroundColor: "#515151", color: "white" }}>
+      <div className="mt-5 mb-5 p-4" style={{ backgroundColor: "#515151", color: "white" }}>
         <h1>MY ACCOUNT</h1>
         <p style={{ marginTop: "-15px" }}>account information</p>
       </div>

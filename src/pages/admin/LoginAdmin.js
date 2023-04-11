@@ -10,7 +10,7 @@ const Login = () => {
     if (username === "admin" && password === "admin123") {
       alert("Login success!");
       alert("Welcome to Admin page!");
-      window.location.replace("/adminhome");
+      window.location.replace("/admin-dashboard");
     } else {
       alert("Wrong answer");
     }

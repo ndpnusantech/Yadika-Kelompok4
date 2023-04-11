@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from '../components/navbar/Navbar'
 import Footer from '../components/footer/Footer'
 import { Container } from 'react-bootstrap'
-import UserProfile from '../components/user/UserProfile'
+import UserProfile from '../components/userAccount/UserProfile'
 
 const Profile = () => {
   return (

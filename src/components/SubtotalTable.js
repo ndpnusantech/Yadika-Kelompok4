@@ -1,7 +1,5 @@
 import React from "react";
-import Table from "react-bootstrap/Table";
-import Card from "react-bootstrap/Card";
-import { Container } from "react-bootstrap";
+import { Container, Card, Table } from "react-bootstrap";
 
 const SubtotalTable = () => {
   return (
