@@ -8,31 +8,37 @@ const Penjualan = () => {
       id: 1,
       tanggal: "20 Maret 2020",
       pembeli: "Nauval Roozan",
+      price:" 100.000"
     },
     {
       id: 2,
       tanggal: "2 April 2020",
       pembeli: "Rangga Alif",
+      price: "100.000"
     },
     {
       id: 3,
       tanggal: "29 Mei 2020",
       pembeli: "Apip Mustopa",
+      price: "100.000"
     },
     {
       id: 4,
       tanggal: "5 Agustus 2020",
       pembeli: "Adhi ",
+      price: "100.000"
     },
     {
       id: 5,
       tanggal: "3 Juli 2020",
       pembeli: " Mona ",
+      price: "100.000"
     },
     {
       id: 6,
       tanggal: "1 Desember 2020",
       pembeli: " nani ",
+      price: "100.000"
     },
   ]);
 
@@ -56,9 +62,9 @@ const Penjualan = () => {
               <th>#id</th>
               <th>Tanggal</th>
               <th>Pembeli</th>
+              <th>Price</th>
               <th>Pembayaran</th>
               <th>Status Order</th>
-              <th>Price</th>
               <th>Action</th>
             </tr>
           </thead>
@@ -68,6 +74,7 @@ const Penjualan = () => {
                 <td>{item.id}</td>
                 <td>{item.tanggal}</td>
                 <td>{item.pembeli}</td>
+                <td>{item.price}</td>
                 <td>
                   <select>
                     <optgroup label="Status">
@@ -85,7 +92,6 @@ const Penjualan = () => {
                         </optgroup>
                     </select>
                 </td>
-                <td>100.000</td>
                 <td>
                   <Button className="btn-sm" variant="danger" onClick={() => handleDelete(item.id)}>
                     Delete
