@@ -15,6 +15,7 @@ import OrderComplete from "./pages/OrderComplete";
 import Admin from "./pages/admin/Dashboard"
 import LoginAdmin from "./pages/admin/LoginAdmin"
 import AdminProduct from "./pages/admin/Product"; 
+import AdminPenjualan from "./pages/admin/Penjualan"; 
 
 import './asset/css/Index.css'
 
@@ -38,6 +39,7 @@ function App() {
         <Route path="/admin" element={< LoginAdmin/>} />
         <Route path="/admin-dashboard" element={< Admin/>} />
         <Route path="/admin-product" element={< AdminProduct/>} />
+        <Route path="/admin-penjualan" element={< AdminPenjualan/>} />
       </Routes>
     </BrowserRouter>
   );
