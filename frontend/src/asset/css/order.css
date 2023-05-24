@@ -1,0 +1,32 @@
+.order{
+    width: 350px;
+    margin-left: 100px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    line-height: 20px;
+    font-size: 14px;
+}
+.pon{
+    margin-left: 50px;
+}
+.pin{
+    margin-left: 130px;
+}
+.pan{
+    margin-left: 150px;
+}
+.coy{
+    width: 200px;
+    margin-left: 200px;
+}
+p{
+    font-size: 10px;
+}
+.bungkus{
+    margin-left: 180px;
+    margin-top: -65px;
+}
+.wp{
+    width: 170px;
+    
+}

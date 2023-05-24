@@ -1,0 +1,28 @@
+GET http://localhost:5000/product
+
+###
+POST http://localhost:5000/product
+Content-Type: application/json
+
+{
+    "product_name": "T-shirt",
+    "product_type": "Shirt",
+    "product_size": "M",
+    "product_stock": 200,
+    "product_price": 107000
+}
+
+###
+PATCH http://localhost:5000/product/1
+Content-Type: application/json
+
+{
+    "product_name": "T-shirt black",
+    "product_type": "Shirt",
+    "product_size": "S",
+    "product_stock": 200,
+    "product_price": 107000
+}
+
+###
+DELETE  http://localhost:5000/product/2

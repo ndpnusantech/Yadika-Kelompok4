@@ -1,0 +1,30 @@
+.footer {
+    margin-top: 20px;
+    background-color: #515151;
+    color: white;
+}
+
+.containFooter {
+    padding: 20px;
+    margin: 0 10px;
+}
+
+.iconLink i {
+    color: white;
+}
+
+.iconLink i:hover {
+    color: rgba(255, 255, 255, 0.307);
+} 
+
+.copyright {
+    background-color: #252525;
+    height: 50px;
+}
+
+.copyright  p {
+    opacity: 30%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
