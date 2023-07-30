@@ -1,15 +1,13 @@
-GET http://localhost:5000/product
+GET http://localhost:5000/product/category/T-shirt
 
 ###
-POST http://localhost:5000/product
+POST http://localhost:5000/user
 Content-Type: application/json
 
 {
-    "product_name": "T-shirt",
-    "product_type": "Shirt",
-    "product_size": "M",
-    "product_stock": 200,
-    "product_price": 107000
+    "user_name": "jhon",
+    "user_email": "jhon@gmail.com",
+    "user_password": "jhon123"
 }
 
 ###
